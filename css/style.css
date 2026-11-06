@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
-    color: #fff;
+    color: #f9f7f7;
 }
 
 .photo-item img {
@@ -80,7 +80,7 @@ body {
 }
 
 .site-footer {
-    padding: 1.5rem 1rem;
+    padding: 50px;
     border-top: 1px solid #333;
     color: #aaa;
     text-align: center;
@@ -88,4 +88,59 @@ body {
 
 .site-footer p {
     margin: 0;
+}
+
+#obrazky {
+    margin-top: 40px;     
+    margin-bottom: 40px;
+}
+
+.figure-caption
+{
+    color: white;
+}
+footer
+{
+min-height: 10px;
+}
+.hero-background {
+    position: relative;
+    height: 100vh;       
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-video {
+        display: none;
+    }
+    .hero-background {
+        background: url('../img/pavouk_na_ruce.jpg') center / cover;
+    }
 }
